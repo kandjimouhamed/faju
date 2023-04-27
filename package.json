@@ -36,6 +36,7 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "parcel": "^2.8.3"
   }
 }
