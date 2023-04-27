@@ -4,13 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "cd ./client && npm run build",
-    "install-client": "cd ./client && npm install",
+    "build": "cd ./client && npm install && npm run build",
     "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client"
   },
+  "engines": {
+    "node": "v16.15.0"
+  },
+  "proxy": "http://localhost:5050",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -33,10 +36,11 @@
     "nodemailer-express-handlebars": "^5.0.0",
     "passport": "^0.6.0",
     "passport-google-oauth2": "^0.2.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "scripts": "^0.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19",
-    "parcel": "^2.8.3"
+    "nodemon": "^2.0.19"
   }
 }
